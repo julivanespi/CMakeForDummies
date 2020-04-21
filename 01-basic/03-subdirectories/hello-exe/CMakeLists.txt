@@ -1,3 +1,4 @@
+message(STATUS "===== Working on HelloWorld3 target =====")
 # we still call the add_executable line here, which points to the main.cpp
 add_executable(HelloWorld3 main.cpp)
 

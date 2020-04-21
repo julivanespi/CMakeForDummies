@@ -1,3 +1,5 @@
+message(STATUS "===== Working on say-hello target =====")
+
 # in this CMakeLists.txt we add the appropriate library calls to say-hello
 
 add_library(
