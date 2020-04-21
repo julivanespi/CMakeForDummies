@@ -1,0 +1,5 @@
+add_subdirectory(PopulationManager)
+
+add_executable(PopulationProjector main.cpp)
+
+target_link_libraries(PopulationProjector PRIVATE PopulationManager)
