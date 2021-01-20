@@ -3,6 +3,7 @@
 # Single Source File Example
 
 ### File listing
+
 ```
 .
 ├── build
@@ -15,12 +16,14 @@
 ```
 
 ### Take away
-At the root level of the project, there will always be a CMakeLists.txt file. For this example, we define the important things:
-* cmake minimum version
-* project name
-* adding executable
 
-``` cmake 
+At the root level of the project, there will always be a CMakeLists.txt file. For this example, we define the important things:
+
+- cmake minimum version
+- project name
+- adding executable
+
+```cmake
 # cmake_minimum_required is always needed in every cmake file.
 cmake_minimum_required(VERSION 3.13.4)
 
@@ -33,4 +36,31 @@ project(HelloWorld)
 add_executable(HelloWorld main.cpp)
 ```
 
+# Usage
 
+In order to generate the executable, you have to do the following:
+
+- Run cmake from the build directory and provide the path to the CMakeList.txt
+
+```
+cmake ..
+```
+
+- Run make in the build directory
+
+```
+make
+```
+
+- The executable should be in the build directory
+
+```
+.
+├── CMakeCache.txt
+├── CMakeFiles
+├── cmake_install.cmake
+├── HelloWorld      <------ Executable
+└── Makefile
+
+1 directory, 4 files
+```
